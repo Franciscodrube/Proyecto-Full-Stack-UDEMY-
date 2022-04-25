@@ -1,0 +1,107 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.home-body{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-iconos{
+  width: 100%;
+  padding: 0;
+  background-color: #e6162e;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.nav-iconos{
+  margin: 10px;
+}
+
+.nav-iconos i{
+  color: #fff;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.nav-iconos i:hover{
+  color: #757575;
+}
+
+.header-index{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+.header-index-mi_blog img{
+  width: 250px;
+}
+.header-index-link a{
+  text-decoration: underline;
+  font-size: 16px ;
+  color: black;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url(../img/cover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-contenido{
+  grid-column: 2;
+  justify-content: center; 
+  text-align: center;
+  color: #fff;
+  margin-top: 10%;
+  height: 350px; 
+  
+}
+
+.main-contenido p{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+}
+
+.main-contenido_btn{
+  background-color: #e6162e;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.main-contenido_btn:hover{
+  background-color: #fff;
+  color: #e6162e;
+  cursor: pointer;
+}
