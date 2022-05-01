@@ -17,28 +17,31 @@ body{
 
 }
 
-.home-body{
+/* .home-body{
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-}
+  left: 0
+  
+}*/
 
 .header-iconos{
   width: 100%;
   padding: 0;
   background-color: #e6162e;
-  display: flex;
-  justify-content: flex-end; 
+  display: inline-block;
+  justify-content:end; 
   align-items: center;
+  /* min-width: 280px; */
 }
 
 .nav-iconos{
   margin: 0.625rem; /*PARA NO USAR PX, PASAMOS A REM DIVIDIENDO EL VALOR XX EN PX / 16*/ 
+  display: inline-block;
 }
 
-.nav-iconos i{
+.nav-iconos  i{
   color: #fff;
   font-size: 1.875rem;
   margin: 0 0.625rem;
@@ -261,3 +264,5 @@ footer{
 .profile-proyecto p{
   margin: .5rem 0;
 }
+
+
