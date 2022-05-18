@@ -15,40 +15,46 @@
         <p>Este programa calcula el area y perimetro de distintas figuras geométricas </p>
     </header>
 
-
+<!-- RESULTADO  -->
     <div class="resultado">
-        <p><strong> El area del ... es ... </strong></p>
-        <p><strong> El perímetro del ... es ...</strong></p>
+        <p id="result"> <strong> Resultado</strong></p>
     </div>
 
 
     <section class="principal">   
         <div class="box">
+<!-- Cuadrado -->
             <div class="box-titulo">
                 <h2>Cuadrado</h2>
             </div>
             <div class="box-calculo">
-                <p> <strong> ¿Cuánto mide cada lado de tu cuadrado? </strong></p>
-                <input class="box-calculo_input" type="number" name="lado" id="lado" placeholder="Ingrese el lado en cm.">
+                <p><strong> ¿Cuánto mide cada lado de tu cuadrado? </strong></p>
+                <input class="box-calculo_input" 
+                       type="number"
+                       name="lado" 
+                       id="imputSide"
+                       placeholder="Ingrese el lado en cm." >
                 
-                <button class="box-calculo_btn" type="button">Perimetro</button>
+                <button class="box-calculo_btn" type="button" onclick="calculatePerimSquare()">Perímetro</button>
                 
-                <button class="box-calculo_btn" type="button">Area</button>
+                <button class="box-calculo_btn" type="button" onclick="calculateAreaSquare()">Area</button>
             </div>
         </div>
+
+<!-- TRIANGULO -->
         <div class="box">
             <div class="box-titulo">
                 <h2>Triángulo</h2>
             </div>
             <div class="box-calculo">
-                <p> <strong> ¿Cuánto mide cada lado de tu cuadrado? </strong></p>
+                <p> <strong> ¿Cuánto mide cada lado de tu triangulo? </strong></p>
                 <input class="box-calculo_input" type="number" name="lado" id="lado1-triangulo" placeholder="Ingrese lado 1 ">
                 
                 <input class="box-calculo_input" type="number" name="lado" id="lado2-triangulo" placeholder="Ingrese lado 2 ">
                 
                 <input class="box-calculo_input" type="number" name="lado" id="lado3-triangulo" placeholder="Ingrese lado 3">
                 
-                <button class="box-calculo_btn" type="button">Perimetro</button>
+                <button class="box-calculo_btn" type="button" onclick="calculatePerimTriangle()">Perimetro</button>
                 
                 <p> <strong> ¿Cuánto mide el área de tu triángulo? </strong></p>
                 
@@ -56,9 +62,11 @@
                 
                 <input class="box-calculo_input" type="number" name="lado" id="altura-triangulo" placeholder="Ingrese altura">
 
-                <button class="box-calculo_btn" type="button">Area</button>
+                <button class="box-calculo_btn" type="button" onclick="calculateAreaTriangle()">Area</button>
             </div>
         </div>
+
+<!-- CIRCULO -->
         <div class="box">
             <div class="box-titulo">
                 <h2>Círculo</h2>
@@ -69,16 +77,16 @@
                 <input class="box-calculo_input" type="number" name="radio " id="radio" placeholder="Ingrese radio">
 
                 <button class="box-calculo_btn" 
-                type="button">Diametro</button>
+                type="button" onclick="calculateDiamCircle()">Diametro</button>
 
-                <button class="box-calculo_btn" type="button">Perimetro</button>
+                <button class="box-calculo_btn" type="button" onclick="calculatePerimCircle()">Perimetro</button>
                 
-                <button class="box-calculo_btn" type="button">Area</button>
+                <button class="box-calculo_btn" type="button" onclick="calculateAreaCircle()">Area</button>
            
             </div>
         </div>
     </section>
 
-
+    <script src="/Figuras_geométricas/geometrias.js"></script>
 </body>
-</html>
+</html> 
